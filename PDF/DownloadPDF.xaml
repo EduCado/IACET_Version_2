@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>699,825</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>612,927</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DownloadPDF_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -59,7 +59,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DownloadPDF" sap:VirtualizedContainerService.HintSize="396,660" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadPDF" sap:VirtualizedContainerService.HintSize="396,722" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -89,7 +89,7 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'MAIN  js-repo-pjax-cont...'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='FileName' attr='text' name2='FileURL' attr2='href'&gt;&lt;webctrl tag='div' class='container-xl clearfix new-discussion-timeline  px-3 px-md-4 px-lg-5' idx='1'/&gt;&lt;webctrl tag='div' class='repository-content ' idx='1'/&gt;&lt;webctrl tag='div' class='gutter-condensed gutter-lg flex-column flex-md-row d-flex' idx='1'/&gt;&lt;webctrl tag='div' class='flex-shrink-0 col-12 col-md-9 mb-4 mb-md-0' idx='1'/&gt;&lt;webctrl tag='div' class='Box mb-3' idx='1'/&gt;&lt;webctrl tag='div' class='js-details-container Details' idx='1'/&gt;&lt;webctrl tag='div' class='Details-content--hidden-not-important js-navigation-container js-active-navigation-container d-md-block' idx='1'/&gt;&lt;webctrl tag='div'/&gt;&lt;webctrl tag='div' class='flex-auto min-width-0 col-md-2 mr-3' idx='1'/&gt;&lt;webctrl tag='span' class='css-truncate css-truncate-target d-block width-fit' idx='1'/&gt;&lt;webctrl tag='a' class='js-navigation-open link-gray-dark' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="0" SimulateClick="True">
                 <ui:ExtractData.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="deb6387b9d175854b7430959af65942a" Selector="&lt;webctrl tag='MAIN' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="36e1ee52-591c-48a4-bf5b-9cec856ae9bd" InformativeScreenshot="deb6387b9d175854b7430959af65942a" Selector="&lt;webctrl tag='MAIN' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
@@ -139,5 +139,22 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
+    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" EndPoint="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" BodyFormat="application/xml" DisplayName="HTTP Request" sap:VirtualizedContainerService.HintSize="354,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" TimeoutMS="6000">
+      <ui:HttpClient.Attachments>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Attachments>
+      <ui:HttpClient.Cookies>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Cookies>
+      <ui:HttpClient.Headers>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Headers>
+      <ui:HttpClient.Parameters>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.Parameters>
+      <ui:HttpClient.UrlSegments>
+        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+      </ui:HttpClient.UrlSegments>
+    </ui:HttpClient>
   </Sequence>
 </Activity>

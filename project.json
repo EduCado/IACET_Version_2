@@ -11,7 +11,7 @@
     "UiPath.PDF.Activities": "[3.2.2]",
     "UiPath.System.Activities": "[20.4.0]",
     "UiPath.UIAutomation.Activities": "[20.4.3]",
-    "UiPath.WebAPI.Activities": "[1.4.4]",
+    "UiPath.WebAPI.Activities": "[1.4.5]",
     "UiPathTeam.PDF.Extensions.Activities": "[2.4.0]"
   },
   "webServices": [],
@@ -36,7 +36,13 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": []
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e6ec3382-5981-43b5-8039-3e8ffa154e49",
+        "fileName": "PDF\\TestCase_PDF_Download.xaml"
+      }
+    ]
   },
   "expressionLanguage": "VisualBasic"
 }
